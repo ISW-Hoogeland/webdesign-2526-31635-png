@@ -1,34 +1,86 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
+    <!-- Stap 1: titel aangepast -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Mijn Website</title>
+    <title>Mijn Portfolio | 4 havo - Portfolio</title>
+    <!-- Stap 4: professioneel font (Poppins) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">Over mij</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="lang-switch">
-                <a href="index.html">NL</a> |
-                <a href="index-en.html">EN</a>
+    <!-- Stap 2: header, nav, main en footer toegevoegd/gestructureerd -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <h1 class="site-title">Mijn Portfolio</h1>
+                <p class="site-sub">Leerling 4 havo — Informatica</p>
             </div>
-        </nav>
+            <nav class="main-nav" aria-label="Hoofdmenu">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="about.html">Over mij</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <h1>Welkom op mijn website</h1>
-        <img src="https://eu-images.contentstack.com/v3/assets/blt7121b6ec5c11097b/bltc544c7a5fc92e5ba/66195cc37e0b45a22a8d9af6/BMW_20M5_20CS_20(1).jpg" alt="BMW M5 CS" class="home-image">
-        <p>Dit is de hoofdpagina van mijn website.</p>
+
+    <main class="site-main container">
+        <!-- Stap 8: inhoud in main met <h1>, <p>, <article>, <img> -->
+        <h2 class="visually-hidden">Informatie over de leerling</h2>
+
+        <article class="intro-card">
+            <div class="intro-text">
+                <h1>Hallo — ik ben Sam</h1>
+                <p>Ik zit in 4 havo en volg Informatica. Op deze site presenteer ik mijn projecten, vaardigheden en contactgegevens voor opdrachten en stages. Deze website is gemaakt als schoolopdracht met een strakke, moderne stijl.</p>
+
+                <ul class="quick-facts">
+                    <li><strong>School:</strong> 4 havo</li>
+                    <li><strong>Vakken:</strong> Informatica, Wiskunde, Engels</li>
+                    <li><strong>Interesses:</strong> Webontwikkeling, grafisch ontwerp, data</li>
+                </ul>
+
+                <p><a class="cta" href="about.html">Lees meer over mij</a></p>
+            </div>
+
+            <div class="intro-image">
+                <img src="https://eu-images.contentstack.com/v3/assets/blt7121b6ec5c11097b/bltc544c7a5fc92e5ba/66195cc37e0b45a22a8d9af6/BMW_20M5_20CS_20(1).jpg" alt="Voorbeeld project - BMW M5 CS" class="home-image">
+            </div>
+        </article>
+
+        <!-- Extra section met korte projecten (grid) -->
+        <section class="projects">
+            <h3>Projecten (selectie)</h3>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <h4>Website schoolproject</h4>
+                    <p>Responsieve site met HTML, CSS Grid en eenvoudige JavaScript.</p>
+                </article>
+                <article class="project-card">
+                    <h4>Data visualisatie</h4>
+                    <p>Grafieken gemaakt met Chart.js voor een vakproject.</p>
+                </article>
+                <article class="project-card">
+                    <h4>Design experiment</h4>
+                    <p>Strak UI-ontwerp met focus op typografie en whitespace.</p>
+                </article>
+            </div>
+        </section>
+
     </main>
-    <footer>
-        <p>Gemaakt als opdracht voor Informatica in klas 4</p>
-        <p>&copy; 2025</p>
+
+    <footer class="site-footer">
+        <!-- Stap 6: footer met vaste inhoud -->
+        <div class="container footer-inner">
+            <p>Gemaakt als opdracht voor Informatica in klas 4</p>
+            <p>&copy; 2025 Mijn Portfolio</p>
+        </div>
     </footer>
+
+    <!-- Stap 11: HTML-validator check hint -->
+    <!-- Tip: run je pagina straks door een HTML-validator (https://validator.w3.org/) -->
 </body>
 </html>
 
