@@ -1,12 +1,12 @@
 :root {
-    --header-footer: #000000;
+    --header-footer: rgba(0,0,0,0.9);
     --background: #ffffff;
-    --text-color: #333333;
+    --text-color: #111827;
     --bg: #ffffff;
-    --surface: #f7f8fb;
+    --surface: #ffffff;
     --primary: #111827;
-    --accent: #0ea5a4;
-    --muted: #6b7280;
+    --accent: #48606e;
+    --muted: #6f798d;
     --card: #ffffff;
     --radius: 10px;
     --container-width: 1100px;
@@ -24,8 +24,8 @@ body {
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
     margin: 0;
-    background: var(--surface);
-    color: var(--primary);
+    background: var(--background);
+    color: var(--text-color);
     font-weight: 300;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -34,19 +34,21 @@ body {
 
 header {
     grid-area: header;
-    background: linear-gradient(180deg, rgba(255,255,255,0.6), transparent);
-    backdrop-filter: blur(4px);
-    border-bottom: 1px solid rgba(16,24,40,0.04);
+    background-color: var(--header-footer);
+    color: #ffffff;
+    padding: 10px 0; /* compacter */
     position: sticky;
     top: 0;
     z-index: 10;
+    backdrop-filter: blur(4px);
 }
 
 nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
+    position: relative;
 }
 
 nav ul {
@@ -60,16 +62,22 @@ nav ul {
 nav a {
     color: white;
     text-decoration: none;
-    transition: font-weight 0.3s;
+    transition: font-weight 0.15s ease, transform var(--transition);
+    font-weight: 600;
 }
 
 nav a:hover {
-    font-weight: bold;
+    font-weight: 800; /* dikgedrukt op hover */
+    transform: translateY(-2px);
 }
 
 .lang-switch {
     position: absolute;
     right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-weight: 600;
 }
 
 .home-image {
@@ -86,7 +94,7 @@ nav a:hover {
 main {
     grid-area: main;
     padding: 2rem;
-    max-width: 1200px;
+    max-width: var(--container-width);
     margin: 0 auto;
 }
 
@@ -94,7 +102,7 @@ footer {
     grid-area: footer;
     background-color: var(--header-footer);
     color: white;
-    padding: 1rem;
+    padding: 12px 0;
     text-align: center;
 }
 
@@ -149,6 +157,23 @@ footer {
     border-radius: 8px;
     font-weight: 500;
     transition: background var(--transition), color var(--transition), transform var(--transition);
+}
+
+/* kleur van de hoofdnav links Home / Over mij / Contact */
+.main-nav a[href="index.html"],
+.main-nav a[href="about.html"],
+.main-nav a[href="contact.html"] {
+    color: #c5d86d;
+    font-weight: 700;
+}
+
+/* hover voor deze specifieke links (overschrijft algemene hover kleur) */
+.main-nav a[href="index.html"]:hover,
+.main-nav a[href="about.html"]:hover,
+.main-nav a[href="contact.html"]:hover {
+    color: #a9c056;
+    background: rgba(197,216,109,0.08);
+    transform: translateY(-2px);
 }
 
 .main-nav a:hover {

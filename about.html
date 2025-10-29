@@ -1,62 +1,45 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Over mij | Mijn Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Yaden — Over mij</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="site-header">
-        <div class="container header-inner">
-            <div class="brand">
-                <h1 class="site-title">Mijn Portfolio</h1>
-                <p class="site-sub">Leerling 4 havo — Informatica</p>
-            </div>
-            <nav class="main-nav" aria-label="Hoofdmenu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html" aria-current="page">Over mij</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header>
+    <nav class="container">
+      <ul class="main-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" aria-current="page">Over mij</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="lang-switch">
+        <a href="about.html">NL</a> | <a href="about-en.html">EN</a>
+      </div>
+    </nav>
+  </header>
 
-    <main class="site-main container">
-        <h2>Over mij</h2>
-        <p>Korte introductie: ik ben leerling in 4 havo en ik interesseer mij in webontwikkeling en informatica.</p>
+  <main class="site-main container">
+    <section class="intro-card">
+      <div>
+        <h1>Yaden</h1>
+        <p>Ik ben Yaden, ik ben 15 jaar en ik kom uit Naaldwijk. Mijn hobby's zijn: skiën (ik ga graag in de winter naar Oostenrijk of Zuid-Frankrijk), basketbal (ik speel in de U16-2 bij Westland Stars in Honsel) en mountainbiken met mijn vader en vrienden in Zoetermeer.</p>
 
-        <!-- Stap 9: gebruik lijsten of tabellen -->
-        <section class="skills">
-            <h3>Vaardigheden</h3>
-            <ul>
-                <li>HTML & CSS (responsive design, CSS Grid)</li>
-                <li>Basis JavaScript</li>
-                <li>Versiebeheer met Git</li>
-            </ul>
-        </section>
+        <!-- afbeelding direct onder de tekst -->
+        <img class="home-image" src="https://plus.unsplash.com/premium_photo-1661868371660-eac62d15361f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2tpfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000" alt="Skiën">
+      </div>
 
-        <section class="school-projects">
-            <h3>Projecten op school</h3>
-            <table>
-                <thead>
-                    <tr><th>Project</th><th>Vak</th><th>Jaar</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td>Portfolio website</td><td>Informatica</td><td>2025</td></tr>
-                    <tr><td>Data visualisatie</td><td>Informatica</td><td>2024</td></tr>
-                </tbody>
-            </table>
-        </section>
-    </main>
+      <!-- verwijderde of lege rechter kolom -->
+    </section>
 
-    <footer class="site-footer">
-        <div class="container footer-inner">
-            <p>Gemaakt als opdracht voor Informatica in klas 4</p>
-            <p>&copy; 2025 Mijn Portfolio</p>
-        </div>
-    </footer>
+    
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>Gemaakt als opdracht voor Informatica in klas 4 — ISW Hoogeland</div>
+      <div>&copy; 2025 Yaden</div>
+    </div>
+  </footer>
 </body>
 </html>

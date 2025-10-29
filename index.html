@@ -1,86 +1,47 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <!-- Stap 1: titel aangepast -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mijn Portfolio | 4 havo - Portfolio</title>
-    <!-- Stap 4: professioneel font (Poppins) -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Yaden — Home</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Stap 2: header, nav, main en footer toegevoegd/gestructureerd -->
-    <header class="site-header">
-        <div class="container header-inner">
-            <div class="brand">
-                <h1 class="site-title">Mijn Portfolio</h1>
-                <p class="site-sub">Leerling 4 havo — Informatica</p>
-            </div>
-            <nav class="main-nav" aria-label="Hoofdmenu">
-                <ul>
-                    <li><a href="index.html" aria-current="page">Home</a></li>
-                    <li><a href="about.html">Over mij</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header>
+    <nav class="container">
+      <ul class="main-nav">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">Over mij</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="lang-switch">
+        <a href="index.html">NL</a> | <a href="index-en.html">EN</a>
+      </div>
+    </nav>
+  </header>
 
-    <main class="site-main container">
-        <!-- Stap 8: inhoud in main met <h1>, <p>, <article>, <img> -->
-        <h2 class="visually-hidden">Informatie over de leerling</h2>
+  <main class="site-main container">
+    <section class="intro-card">
+      <div>
+        <h1>Yaden</h1>
+        <p>Ik zit op ISW Hoogeland, ik ben 15 jaar. Ik hou van skiën, basketbal en mountainbiken.</p>
+      </div>
+      
+    </section>
+<!-- afbeelding direct onder de tekst -->
+         <img class="home-image" src="https://npr.brightspotcdn.com/a9/8c/2e420a484539953394a5262c779d/ap21161807202074.jpg" alt="Lamelo Ball">
+    <section>
+      <h2>Welkom</h2>
+      <p>Dit is mijn persoonlijke site — eenvoudige layout om te oefenen met HTML & CSS.</p>
+    </section>
+  </main>
 
-        <article class="intro-card">
-            <div class="intro-text">
-                <h1>Hallo — ik ben Sam</h1>
-                <p>Ik zit in 4 havo en volg Informatica. Op deze site presenteer ik mijn projecten, vaardigheden en contactgegevens voor opdrachten en stages. Deze website is gemaakt als schoolopdracht met een strakke, moderne stijl.</p>
-
-                <ul class="quick-facts">
-                    <li><strong>School:</strong> 4 havo</li>
-                    <li><strong>Vakken:</strong> Informatica, Wiskunde, Engels</li>
-                    <li><strong>Interesses:</strong> Webontwikkeling, grafisch ontwerp, data</li>
-                </ul>
-
-                <p><a class="cta" href="about.html">Lees meer over mij</a></p>
-            </div>
-
-            <div class="intro-image">
-                <img src="https://eu-images.contentstack.com/v3/assets/blt7121b6ec5c11097b/bltc544c7a5fc92e5ba/66195cc37e0b45a22a8d9af6/BMW_20M5_20CS_20(1).jpg" alt="Voorbeeld project - BMW M5 CS" class="home-image">
-            </div>
-        </article>
-
-        <!-- Extra section met korte projecten (grid) -->
-        <section class="projects">
-            <h3>Projecten (selectie)</h3>
-            <div class="projects-grid">
-                <article class="project-card">
-                    <h4>Website schoolproject</h4>
-                    <p>Responsieve site met HTML, CSS Grid en eenvoudige JavaScript.</p>
-                </article>
-                <article class="project-card">
-                    <h4>Data visualisatie</h4>
-                    <p>Grafieken gemaakt met Chart.js voor een vakproject.</p>
-                </article>
-                <article class="project-card">
-                    <h4>Design experiment</h4>
-                    <p>Strak UI-ontwerp met focus op typografie en whitespace.</p>
-                </article>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="site-footer">
-        <!-- Stap 6: footer met vaste inhoud -->
-        <div class="container footer-inner">
-            <p>Gemaakt als opdracht voor Informatica in klas 4</p>
-            <p>&copy; 2025 Mijn Portfolio</p>
-        </div>
-    </footer>
-
-    <!-- Stap 11: HTML-validator check hint -->
-    <!-- Tip: run je pagina straks door een HTML-validator (https://validator.w3.org/) -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>Gemaakt als opdracht voor Informatica in klas 4 — ISW Hoogeland</div>
+      <div>&copy; 2025 Yaden</div>
+    </div>
+  </footer>
 </body>
 </html>
 

@@ -1,0 +1,134 @@
+/* Base styles */
+:root {
+    --achtergrond: #141414;
+    --tekst: #e6dfd9;
+    --accent: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--achtergrond);
+    color: var(--tekst);
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.name-title {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Navigation */
+.main-nav {
+    background-color: rgba(134, 134, 134, 0.95);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.main-nav a {
+    color: var(--tekst);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: var(--accent);
+}
+
+/* Content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.content {
+    margin-top: 2rem;
+}
+
+.featured-image,
+.content-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 2rem auto;
+    display: block;
+    border: 2px solid var(--accent);
+}
+
+.highlights {
+    list-style: none;
+    margin: 1rem 0;
+}
+
+.highlights li::before {
+    content: "•";
+    color: var(--accent);
+    margin-right: 0.5rem;
+}
+
+.experience-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+}
+
+.experience-table th,
+.experience-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--accent);
+}
+
+.experience-table th {
+    color: var(--accent);
+}
+
+/* Footer */
+footer {
+    background-color: rgba(134, 134, 134, 0.95);
+    padding: 1rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .name-title {
+        font-size: 2rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+}
