@@ -7,7 +7,7 @@
     --primary: #111827;
     --accent: #48606e;
     --muted: #6f798d;
-    --card: #ffffff;
+    --card: #987d7c;
     --radius: 10px;
     --container-width: 1100px;
     --transition: 250ms cubic-bezier(.2,.8,.2,1);
@@ -159,18 +159,18 @@ footer {
     transition: background var(--transition), color var(--transition), transform var(--transition);
 }
 
-/* kleur van de hoofdnav links Home / Over mij / Contact */
+/* kleur van de hoofdnav links Home / Skiën / Basketbal */
 .main-nav a[href="index.html"],
-.main-nav a[href="about.html"],
-.main-nav a[href="contact.html"] {
+.main-nav a[href="skien.html"],
+.main-nav a[href="basketbal.html"] {
     color: #c5d86d;
     font-weight: 700;
 }
 
-/* hover voor deze specifieke links (overschrijft algemene hover kleur) */
+/* hover voor deze specifieke links */
 .main-nav a[href="index.html"]:hover,
-.main-nav a[href="about.html"]:hover,
-.main-nav a[href="contact.html"]:hover {
+.main-nav a[href="skien.html"]:hover,
+.main-nav a[href="basketbal.html"]:hover {
     color: #a9c056;
     background: rgba(197,216,109,0.08);
     transform: translateY(-2px);
