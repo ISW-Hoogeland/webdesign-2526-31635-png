@@ -1,18 +1,18 @@
 :root {
     --header-footer: rgba(0,0,0,0.9);
-    --background: #ffffff;
+    --background: #f1ebeb;
     --text-color: #111827;
-    --bg: #ffffff;
+    --bg: #fcfcfc;
     --surface: #ffffff;
     --primary: #111827;
     --accent: #48606e;
-    --muted: #6f798d;
-    --card: #987d7c;
+    --muted: #0e234d;
+    --card: #31393c;
     --radius: 10px;
     --container-width: 1100px;
     --transition: 250ms cubic-bezier(.2,.8,.2,1);
     --shadow: 0 6px 20px rgba(16,24,40,0.08);
-    --glass: rgba(255,255,255,0.6);
+    --glass: rgba(196, 22, 22, 0.301);
 }
 
 body {
@@ -60,7 +60,7 @@ nav ul {
 }
 
 nav a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     transition: font-weight 0.15s ease, transform var(--transition);
     font-weight: 600;
@@ -171,7 +171,7 @@ footer {
 .main-nav a[href="index.html"]:hover,
 .main-nav a[href="skien.html"]:hover,
 .main-nav a[href="basketbal.html"]:hover {
-    color: #a9c056;
+    color: #a8ca2d;
     background: rgba(197,216,109,0.08);
     transform: translateY(-2px);
 }
@@ -184,7 +184,7 @@ footer {
 
 .main-nav a[aria-current="page"] {
     background: var(--accent);
-    color: white;
+    color: rgb(255, 255, 255);
     box-shadow: var(--shadow);
 }
 
@@ -197,7 +197,7 @@ footer {
     grid-template-columns: 1fr 360px;
     gap: 28px;
     align-items: center;
-    background: linear-gradient(180deg, rgba(255,255,255,0.6), var(--card));
+    background: linear-gradient(180deg, rgba(170, 90, 90, 0.6), var(--card));
     padding: 28px;
     border-radius: var(--radius);
     box-shadow: var(--shadow);
@@ -280,7 +280,7 @@ p {
     padding: 10px 12px;
     border-radius: 8px;
     border: 1px solid rgba(16,24,40,0.06);
-    background: white;
+    background: rgb(255, 255, 255);
     outline: none;
     transition: box-shadow var(--transition), border-color var(--transition);
 }
@@ -294,7 +294,7 @@ p {
 .btn, .cta {
     display: inline-block;
     background: var(--accent);
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 10px 16px;
     border-radius: 8px;
     text-decoration: none;
